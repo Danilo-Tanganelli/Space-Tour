@@ -1,0 +1,221 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Barlow:ital@1&family=Bellefair&display=swap');
+
+
+#txt1{
+    color: #D0D6F9;
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 4px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    text-transform: uppercase;
+ }
+
+#txt2{
+    color: #FFFFFF;
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+#txt3{
+    color: #D0D6F9;
+    text-align:left;
+    width: 400px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    width: 293px;
+    margin-bottom: 150px;
+    margin-right: 200px;
+    height: 100px;
+    
+}
+
+
+body{
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow:hidden;
+    
+}
+section{
+    display: flex;
+    width: 200px;
+}
+#root{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+#containerMid{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 250px;
+    align-items: center;
+}
+
+#containerLow{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+
+#menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#imgstar{
+    
+    display: flex;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    margin-left: 65px;
+    margin-top: 32px;
+
+}
+
+#imagemback{
+    background: url(Imagens/background-crew.png) no-repeat bottom center scroll;
+    background-size: cover;
+    
+}
+
+#sumir{ 
+    opacity: 0  ;
+}
+nav{ 
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    width: 60vw;
+    height: 81px;
+    color: aliceblue;
+     background: rgba(248, 244, 244, 0.096);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    
+}
+#risco{
+    background-color: rgb(85, 84, 84);
+    display: flex;
+    width: 300px;
+    margin-left: 80px;
+    height: 1px;
+    margin-top: 30px;
+}
+.menu-text{
+    color: #FFFFFF;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#txtTop {
+    color: #FFFFFF;
+    margin-right: 90px;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 4px;
+}
+
+#numbertop {
+    margin-left: 130px;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 4.725px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+
+#topSection {
+    display: flex;
+    width: 550px;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#sectionfather{
+    display: flex;
+    flex-direction: column;
+}
+#textoMid{
+    margin-top: 150px;
+    margin-right: 180px;
+    
+}
+#equipe{ 
+    display: flex;
+    width: 379.3px;
+    height: 474.6px;
+    display: flex;
+    width: 379px;
+    height: 478.6px;
+    margin-bottom: -73px;
+    margin-left: -450px;
+}
+
+#switch{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: #FFFFFF;
+    width: 94px;
+    margin-left: 172px;
+    justify-content: space-evenly;
+    height: 50px;
+    flex-wrap: wrap;
+    cursor: pointer;
+    margin-top: 50px;
+}
+.balls{
+    border-color: #FFFFFF;
+    border: 5px solid ;
+    border-radius: 50%;
+    opacity: 0.17;
+}
+#douglas{
+    opacity: 1;
+}
+
+#mark{
+    opacity: 0.17;
+}
+
+#victor{
+    opacity: 0.17;
+}
+
+#anousheh{
+    
+    opacity: 0.17;
+}

@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Barlow:ital@1&family=Bellefair&display=swap');
+
+
+#txt1 {
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 4px;
+}
+
+#txt2 {
+    color: #FFFFFF;
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 75px;
+    margin: 0;
+    width: 240px;
+}
+
+#txt3 {
+    color: #D0D6F9;
+    text-align: left;
+    width: 400px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    width: 300px;
+
+}
+
+
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+}
+
+section {
+    display: flex;
+    width: 200px;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+/* a,p{
+    color: #FFFFFF;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+} */
+#containerMid {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    height: 900px;
+    align-items: center;
+}
+
+#textoMid {
+    margin-bottom: 100px;
+}
+
+#containerLow {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#imgstar {
+
+    display: flex;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    margin-left: 65px;
+    margin-top: 32px;
+
+}
+
+#imagemback {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    text-align: center;
+    background: url(Imagens/background-destination.png) no-repeat bottom center scroll;
+    background-position: 30% 45%;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#sumir {
+    opacity: 0;
+}
+
+#options {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    width: 60vw;
+    height: 81px;
+    color: aliceblue;
+    background: rgba(248, 244, 244, 0.096);
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
+
+}
+
+#risco {
+    background-color: rgb(85, 84, 84);
+    display: flex;
+    width: 300px;
+    margin-left: 80px;
+    height: 1px;
+    margin-top: 30px;
+}
+
+#risco2 {
+    background-color: rgb(85, 84, 84);
+    margin-top: 30px;
+    width: 300px;
+
+    height: 0.7px;
+}
+
+.menu-text {
+    color: #FFFFFF;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#under {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.distanceTxt {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #D0D6F9;
+    width: 59px;
+}
+
+.subTxt {
+
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+#travelTime {
+    margin-left: 50px;
+}
+
+.low {
+    margin: 0;
+}
+
+#distance {
+    width: 71px;
+}
+
+#fatherplanets {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 106px;
+}
+
+.planets {
+    height: 20px;
+    width: 34px;
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 2.7px;
+    cursor: pointer;
+
+
+}
+
+.sublinhado {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 35px;
+    margin: 0;
+    height: 3px;
+}
+
+#sub1 {
+    display: flex;
+    width: 32px;
+}
+
+#sub2 {
+    display: none;
+    margin-left: 70px;
+    width: 33px;
+}
+
+#sub3 {
+    display: none;
+    width: 47px;
+    margin-left: 140px;
+}
+
+#sub4 {
+    display: none;
+    margin-left: 210px;
+    width: 36px;
+}
+
+#sublinhadoFlex {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+}
+
+
+.planetasJs {
+    margin-left: 250px;
+    margin-bottom: 70px;
+    width: 300px;
+    height: 300px;
+}
+
+.ativar {
+    display: flex;
+}
+
+
+#txtTop {
+    color: #FFFFFF;
+    margin-right: 90px;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 4px;
+}
+
+#numbertop {
+    margin-left: 130px;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 4.725px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+
+
+
+#topSection {
+    display: flex;
+    width: 550px;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#moon {
+    color: #FFFFFF;
+}

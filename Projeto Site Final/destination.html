@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StyleD.css">
+    <title>SPACE TOURISM</title>
+</head>
+
+<body id="imagemback">
+
+    <div id="root">
+
+        <div id="menu">
+
+            <img id="imgstar" src="Imagens/Group 2.png">
+            <nav id="risco"></nav>
+            <nav id="options">
+                <a href="Index.html" class="menu-text">00 HOME</a>
+                <a href="destination.html" class="menu-text">01 DESTINATION</a>
+                <a href="crew.html" class="menu-text">02 CREW</a>
+                <a href="technology.html" class="menu-text">03 TECHNOLOGY</a>
+                <p id="sumir">....</p>
+            </nav>
+
+        </div>
+        <section id="topSection">
+            <p id="numbertop">01</p>
+            <p id="txtTop">PICK YOUR DESTINATION</p>
+        </section>
+        <main id="containerMid">
+            <div id="textoMid">
+                <nav id="fatherplanets">
+
+                    <div id="moon" class="planets" onclick="trocarPlaneta(1)">MOON</div>
+
+                    <div id="mars" class="planets" onclick="trocarPlaneta(2)">MARS</div>
+
+                    <div id="europa" class="planets" onclick="trocarPlaneta(3)">EUROPA</div>
+
+                    <div id="titan" class="planets" onclick="trocarPlaneta(4)">TITAN</div>
+
+                </nav>
+                <div id="sublinhadoFlex">
+                    <p id="sub1" class="sublinhado" ></p>
+
+                    <p id="sub2" class="sublinhado"></p>
+
+                    <p id="sub3" class="sublinhado"></p>
+
+                    <p id="sub4" class="sublinhado"></p>
+                </div>
+                <p id="txt2">MOON</p>
+                <p id="txt3">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain
+                    perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2
+                    and Apollo 11 landing sites.</p>
+                <section id="risco2"></section>
+                <div id="under">
+                    <div class="low">
+                        <p class="distanceTxt">AVG. DISTANCE</p>
+                        <p id="subTxt1" class="subTxt">384,400 KM</p>
+                    </div>
+                    <div id="travelTime" class="low">
+                        <p id="distance" class="distanceTxt">EST. TRAVEL TIME</p>
+                        <p id="dayz" class="subTxt">3 DAYS</p>
+                    </div>
+                </div>
+            </div>
+            <div id="divExplore">
+                <img id="planetchange" class="planetasJs" src="Imagens/moon.png"></img>
+            </div>
+
+        </main>
+    </div>
+    <script>
+    var planet = 0;
+
+        function trocarPlaneta(r){
+            if (r=== 1){
+                //mudar a img do planeta
+                const img = document.getElementById("planetchange");
+                img.src="Imagens/moon.png"
+                 //mudar o nome do planeta
+                 const planetName =document.getElementById("txt2")
+                planetName.innerHTML = "MOON"
+                 //mudar descricao do planeta
+                 const planetDesc =document.getElementById("txt3")
+                planetDesc.innerHTML = "See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites."
+                //mudar a distancia do planeta
+                const planetDistance = document.getElementById("subTxt1")
+                planetDistance.innerHTML = "384,400 KM"
+                //mudar o travel time
+                const planetDays = document.getElementById("dayz")
+                planetDays.innerHTML = "3 DAYS"
+                 //sublinhar o nome do planeta
+                 const moon = document.getElementById("sub1")
+                moon.style = "display:flex;"
+                const mars = document.getElementById("sub2")
+                mars.style = "display:none;"
+                const europa = document.getElementById("sub3")
+                europa.style = "display:none;"
+                const titan = document.getElementById("sub4")
+                titan.style = "display:none;"
+                //mudar cor
+                const moon1 = document.getElementById("moon")
+                moon1.style = "color:#FFFFFF"
+                const mars1 = document.getElementById("mars")
+                mars1.style = "color: #D0D6F9;"
+                const europa1 = document.getElementById("europa")
+                europa1.style = "color: #D0D6F9;"
+                const titan1 = document.getElementById("titan")
+                titan1.style = "color: #D0D6F9;"
+
+            }
+
+
+
+
+            if (r=== 2){
+                const img = document.getElementById("planetchange");
+                
+                img.src="Imagens/mars.png"
+                 //mudar o nome do planeta
+                 const planetName =document.getElementById("txt2")
+                planetName.innerHTML = "MARS"
+                 //mudar descricao do planeta
+                 const planetDesc =document.getElementById("txt3")
+                planetDesc.innerHTML = "Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest! &nbsp; &nbsp; &nbsp; &nbsp;"
+                //mudar a distancia do planeta
+                const planetDistance = document.getElementById("subTxt1")
+                planetDistance.innerHTML = "225 MIL. KM"
+                //mudar o travel time
+                const planetDays = document.getElementById("dayz")
+                planetDays.innerHTML = "9 MONTHS"
+                //sublinhar o nome do planeta
+                const moon = document.getElementById("sub1")
+                moon.style = "display:none;"
+                const mars = document.getElementById("sub2")
+                mars.style = "display:flex;"
+                const europa = document.getElementById("sub3")
+                europa.style = "display:none;"
+                const titan = document.getElementById("sub4")
+                titan.style = "display:none;"
+                //mudar cor
+                const moon1 = document.getElementById("moon")
+                moon1.style = "color: #D0D6F9;"
+                const mars1 = document.getElementById("mars")
+                mars1.style = "color:#FFFFFF"
+                const europa1 = document.getElementById("europa")
+                europa1.style = "color: #D0D6F9;"
+                const titan1 = document.getElementById("titan")
+                titan1.style = "color: #D0D6F9;"
+
+
+                
+            }
+
+
+
+
+
+            if (r=== 3){
+                //mudar a img do planeta
+                const img = document.getElementById("planetchange");
+                
+                img.src="Imagens/europa.png"
+                 //mudar o nome do planeta
+                 const planetName =document.getElementById("txt2")
+                planetName.innerHTML = "EUROPA"
+                 //mudar descricao do planeta
+                 const planetDesc =document.getElementById("txt3")
+                planetDesc.innerHTML = "The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin."
+                //mudar a distancia do planeta
+                const planetDistance = document.getElementById("subTxt1")
+                planetDistance.innerHTML = "628 MIL. KM"
+                //mudar o travel time
+                const planetDays = document.getElementById("dayz")
+                planetDays.innerHTML = "3 YEARS"
+                //sublinhar o nome do planeta
+                const moon = document.getElementById("sub1")
+                moon.style = "display:none;"
+                const mars = document.getElementById("sub2")
+                mars.style = "display:none;"
+                const europa = document.getElementById("sub3")
+                europa.style = "display:flex;"
+                const titan = document.getElementById("sub4")
+                titan.style = "display:none;"
+                //mudar cor
+                const moon1 = document.getElementById("moon")
+                moon1.style = "color: #D0D6F9;"
+                const mars1 = document.getElementById("mars")
+                mars1.style = "color: #D0D6F9;"
+                const europa1 = document.getElementById("europa")
+                europa1.style = "color:#FFFFFF"
+                const titan1 = document.getElementById("titan")
+                titan1.style = "color: #D0D6F9;"
+
+            }
+
+
+
+            if (r=== 4){
+                //mudar a img do planeta
+                const img = document.getElementById("planetchange");
+                
+                img.src="Imagens/titan.png"
+                 //mudar o nome do planeta
+                 const planetName =document.getElementById("txt2")
+                planetName.innerHTML = "TITAN"
+                //mudar descricao do planeta
+                const planetDesc =document.getElementById("txt3")
+                planetDesc.innerHTML = "The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn."
+                //mudar a distancia do planeta
+                const planetDistance = document.getElementById("subTxt1")
+                planetDistance.innerHTML = "1.6 BIL. KM" 
+                //mudar o travel time
+                const planetDays = document.getElementById("dayz")
+                planetDays.innerHTML = "7 YEARS"
+                //sublinhar o nome do planeta
+                const moon = document.getElementById("sub1")
+                moon.style = "display:none;"
+                const mars = document.getElementById("sub2")
+                mars.style = "display:none;"
+                const europa = document.getElementById("sub3")
+                europa.style = "display:none;"
+                const titan = document.getElementById("sub4")
+                titan.style = "display:flex;"
+                //mudar cor
+                const moon1 = document.getElementById("moon")
+                moon1.style = "color: #D0D6F9;"
+                const mars1 = document.getElementById("mars")
+                mars1.style = "color: #D0D6F9;"
+                const europa1 = document.getElementById("europa")
+                europa1.style = "color: #D0D6F9;"
+                const titan1 = document.getElementById("titan")
+                titan1.style = "color:#FFFFFF"
+
+
+            }
+        }
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StyleC.css">
+    <title>SPACE TOURISM</title>
+</head>
+
+<body id="imagemback">
+
+    <div id="root">
+
+        <div id="menu">
+
+            <img id="imgstar" src="Imagens/Group 2.png">
+            <nav id="risco"></nav>
+            <nav>
+                <a href="Index.html" class="menu-text">00 HOME</a>
+                <a href="destination.html" class="menu-text">01 DESTINATION</a>
+                <a href="crew.html" class="menu-text">02 CREW</a>
+                <a href="technology.html" class="menu-text">03 TECHNOLOGY</a>
+                <p id="sumir">....</p>
+            </nav>
+
+        </div>
+        <section id="sectionfather">
+            <section id="topSection">
+                <p id="numbertop">02</p>
+                <p id="txtTop">MEET YOUR CREW &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </section>
+        </section>
+        <main id="containerMid">
+            <div id="textoMid">
+                <p id="txt1">
+                    COMMANDER
+                </p>
+                <p id="txt2">DOUGLAS HURLEY</p>
+                <p id="txt3">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA
+                    astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+            </div>
+            <div id="divExplore">
+                <img id="equipe" src="Imagens/douglas.png"></img>
+            </div>
+        </main>
+        <footer id="switch" onclick="mudarPessoa()">
+            <p id="douglas" class="balls"></p>
+            <p id="mark" class="balls"></p>
+            <p id="victor" class="balls"></p>
+            <p id="ano" class="balls"></p>
+        </div>
+    </div>
+    <script>
+        let cont = 1
+        function mudarPessoa(){
+            cont = cont+1;
+            if (cont>4){
+                cont = 1
+            }
+            
+
+            if(cont === 1){ //douglas
+             //ativar as bolas
+             const P1 = document.getElementById("douglas");
+            P1.style = "opacity: 1;"
+            const P2 = document.getElementById("mark");
+            P2.style =  "opacity: 0.17;"
+            const P3 = document.getElementById("victor");
+            P3.style = "opacity: 0.17;"
+            const P4 = document.getElementById("ano");
+            P4.style = "opacity: 0.17;"
+            //mudar os textos
+            const tx1 = document.getElementById("txt1")
+            tx1.innerHTML = "COMMANDER"
+            const tx2 = document.getElementById("txt2")
+            tx2.innerHTML = "DOUGLAS HURLEY"
+            const tx3 = document.getElementById("txt3")
+            tx3.innerHTML = "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2."
+            //mudar as imagens
+            const img1 = document.getElementById("equipe")
+            img1.src = "Imagens/douglas.png"
+            
+        }
+            if(cont === 2){ //mark
+            //ativar as bolas
+            const P1 = document.getElementById("douglas");
+            P1.style = "opacity: 0.17;"
+            const P2 = document.getElementById("mark");
+            P2.style =  "opacity: 1;"
+            const P3 = document.getElementById("victor");
+            P3.style = "opacity: 0.17;"
+            const P4 = document.getElementById("ano");
+            P4.style = "opacity: 0.17;"
+             //mudar os textos
+            const tx1 = document.getElementById("txt1")
+            tx1.innerHTML = "MISSION SPECIALIST"
+            const tx2 = document.getElementById("txt2")
+            tx2.innerHTML = "MARK SHUTTLEWORTH"
+            const tx3 = document.getElementById("txt3")
+            tx3.innerHTML = "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist. "
+            //mudar as imagens
+            const img1 = document.getElementById("equipe")
+            img1.src = "Imagens/mark.png"
+            
+        }
+            //victor
+            if(cont === 3){
+             //ativar as bolas
+             const P1 = document.getElementById("douglas");
+            P1.style = "opacity: 0.17;"
+            const P2 = document.getElementById("mark");
+            P2.style =  "opacity: 0.17;"
+            const P3 = document.getElementById("victor");
+            P3.style = "opacity: 1;"
+            const P4 = document.getElementById("ano");
+            P4.style = "opacity: 0.17;"
+            //mudar os textos
+            const tx1 = document.getElementById("txt1")
+            tx1.innerHTML = "PILOT"
+            const tx2 = document.getElementById("txt2")
+            tx2.innerHTML = "Victor Glover"
+            const tx3 = document.getElementById("txt3")
+            tx3.innerHTML = "Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer. "
+            //mudar as imagens
+            const img1 = document.getElementById("equipe")
+            img1.src = "Imagens/victor.png"
+            
+        }
+            //anousheh
+            if(cont === 4){
+             //ativar as bolas
+             const P1 = document.getElementById("douglas");
+            P1.style = "opacity: 0.17;"
+            const P2 = document.getElementById("mark");
+            P2.style =  "opacity: 0.17;"
+            const P3 = document.getElementById("victor");
+            P3.style = "opacity: 0.17;"
+            const P4 = document.getElementById("ano");
+            P4.style = "opacity: 1;"
+            //mudar os textos
+            const tx1 = document.getElementById("txt1")
+            tx1.innerHTML = "Flight Engineer"
+            const tx2 = document.getElementById("txt2")
+            tx2.innerHTML = "Anousheh Ansari"
+            const tx3 = document.getElementById("txt3")
+            tx3.innerHTML = "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space."
+            //mudar as imagens
+            const img1 = document.getElementById("equipe")
+            img1.src = "Imagens/anousheh.png"
+            img1.style ="    width: 410.3px;"
+        }
+        }
+    </script>
+</body>
+
+</html>

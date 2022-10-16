@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StyleT.css">
+    <title>SPACE TOURISM</title>
+</head>
+
+<body id="imagemback">
+
+    <div id="root">
+
+        <div id="menu">
+
+            <img id="imgstar" src="Imagens/Group 2.png">
+            <nav id="risco"></nav>
+            <nav>
+                <a href="Index.html" class="menu-text">00 HOME</a>
+                <a href="destination.html" class="menu-text">01 DESTINATION</a>
+                <a href="crew.html" class="menu-text">02 CREW</a>
+                <a href="technology.html" class="menu-text">03 TECHNOLOGY</a>
+                <p id="sumir">....</p>
+            </nav>
+
+        </div>
+        <section id="sectionfather">
+            <section id="topSection">
+                <p id="numbertop">03</p>
+                <p id="txtTop">SPACE LAUNCH 101&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </section>
+        </section>
+        
+        <main id="containerMid">
+            <div id="textoMid">
+                <p id="txt1">
+                    THE TERMINOLOGY…
+                </p>
+                <p id="txt2">LAUNCH VEHICLE</p>
+                <p id="txt3">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+            </div>
+            
+            <div id="divExplore">
+                <img id="foguetes" src="Imagens/foguete1.jpg"></img>
+            </div>
+
+        </main>
+        <article id="switch">
+            <button id="ball1" class="btn" onclick="mudarFoguete(1)">1</button>
+            <button id="ball2" class="btn" onclick="mudarFoguete(2)">2</button>
+            <button id="ball3" class="btn" onclick="mudarFoguete(3)">3</button>
+        </article>
+    </div>
+
+
+
+
+    <script>
+        let cont = 1
+        function mudarFoguete(r) {
+           
+
+            if (r === 1) { 
+                //ativar as bolas
+                const active1 = document.getElementById("ball1")
+                active1.style ="background-color: #FFFFFF; color: #0B0D17; border: none;"
+                const active2 = document.getElementById("ball2")
+                active2.style = "background-color: #ffffff00; color: #FFFFFF;"
+                const active3 = document.getElementById("ball3")
+                active3.style = "background-color: #ffffff00; color: #FFFFFF; "
+                //mudar as imagens
+                const img1 = document.getElementById("foguetes")
+                img1.src = "Imagens/foguete1.jpg"
+                
+                //mudar os textos
+                const tx1 = document.getElementById("txt1")
+                tx1.innerHTML = "THE TERMINOLOGY…"
+                const tx2 = document.getElementById("txt2")
+                tx2.innerHTML = "LAUNCH VEHICLE"
+                const tx3 = document.getElementById("txt3")
+                tx3.innerHTML = "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!"
+
+            }
+            if (r === 2) { 
+                 //ativar as bolas
+                 const active1 = document.getElementById("ball1")
+                active1.style ="background-color: #ffffff00; color: #FFFFFF;"
+                const active2 = document.getElementById("ball2")
+                active2.style = "background-color: #FFFFFF; color: #0B0D17; border: none;"
+                const active3 = document.getElementById("ball3")
+                active3.style = "background-color: #ffffff00; color: #FFFFFF;"
+              
+                //mudar os textos
+                const tx1 = document.getElementById("txt1")
+                tx1.innerHTML = "THE TERMINOLOGY…"
+                const tx2 = document.getElementById("txt2")
+                tx2.innerHTML = "SPACEPORT"
+                const tx3 = document.getElementById("txt3")
+                tx3.innerHTML = "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch. "
+                //mudar as imagens
+                const img1 = document.getElementById("foguetes")
+                img1.src = "Imagens/foguete2.jpg"
+
+            }
+            
+            if (r === 3) {
+                //ativar as bolas
+                const active1 = document.getElementById("ball1")
+                active1.style ="background-color: #ffffff00; color: #FFFFFF;"
+                const active2 = document.getElementById("ball2")
+                active2.style = "background-color: #ffffff00; color: #FFFFFF;"
+                const active3 = document.getElementById("ball3")
+                active3.style = "background-color: #FFFFFF; color: #0B0D17; border: none;"
+                //mudar os textos
+                const tx1 = document.getElementById("txt1")
+                tx1.innerHTML = "THE TERMINOLOGY…"
+                const tx2 = document.getElementById("txt2")
+                tx2.innerHTML = "SPACE CAPSULE"
+                const tx3 = document.getElementById("txt3")
+                tx3.innerHTML = "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained. "
+                //mudar as imagens
+                const img1 = document.getElementById("foguetes")
+                img1.src = "Imagens/foguete3.jpg"
+
+            }
+            
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Barlow:ital@1&family=Bellefair&display=swap');
+
+
+#txt1{
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 4px;
+ }
+
+#txt2{
+    color: #FFFFFF;
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    margin: 0;
+}
+
+#txt3{
+    color: #D0D6F9;
+    text-align:left;
+    width: 400px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    width: 300px;
+    
+}
+
+
+body{
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow:hidden;
+    
+}
+section{
+    display: flex;
+    width: 200px;
+}
+#root{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+/* a,p{
+    color: #FFFFFF;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+} */
+#containerMid{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 900px;
+    align-items: center;
+}
+
+#containerLow{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+#explore{ 
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    width: 200px;
+    height: 200px;
+}
+
+#menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#imgstar{
+    
+    display: flex;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    margin-left: 65px;
+    margin-top: 32px;
+
+}
+
+#imagemback{
+    background: url(Imagens/background-home.jpg) no-repeat bottom center scroll;
+    background-size: cover;
+}
+
+#sumir{ 
+    opacity: 0  ;
+}
+nav{ 
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    width: 60vw;
+    height: 81px;
+    color: aliceblue;
+     background: rgba(248, 244, 244, 0.096);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    
+}
+#risco{
+    background-color: rgb(85, 84, 84);
+    display: flex;
+    width: 300px;
+    margin-left: 80px;
+    height: 1px;
+    margin-top: 30px;
+}
+.menu-text{
+    color: #FFFFFF;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+}
